@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f0652e315c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    
+
+    <title>Admin page</title>
+</head>
+
+<body>
+
+    <div class="containers">
+
+        <div class="text-center">
+            <h1>Enter your Users Here</h1>
+
+            <input type="text" id="searchinput">
+            <button id='searchbutton'>search</button>
+
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                style="display: none;" id="demobtn">
+                Launch demo modal
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Create User</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <input type="text" placeholder="name" id="names" style="margin: 1rem; border-radius: 5px;">
+                            <input type="text" placeholder="enter username" id="usercontent"
+                                style="margin: 1rem; border-radius: 5px;">
+                            <input type="text" placeholder="enter password" id="passwordcontent"
+                                style="margin: 1rem; border-radius: 5px;">
+                            <input type="text" placeholder="enter role" id="role"
+                                style="margin: 1rem; border-radius: 5px;">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="savebtn">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="" id="useradder" style="margin-top: 2rem;"><i class="fa fa-solid fa-plus"></i></button>
+
+
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                id="staticdrop" style="display: none;">
+                Launch static backdrop modal
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Change username</h5>
+                            <button type="button" class="btn-close" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <input type="text" placeholder="change name" id="updatedname">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="changeuser">save
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="getCodeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                   <div class="modal-content">
+                   <div class="modal-header">
+                       <h4 class="modal-title">Modal title</h4>
+                   </div>
+                   <div class="modal-body">
+                       <input type="text" placeholder="change password" id="changingpassword">
+                   </div>
+                   <div class="modal-footer">
+                       <button type="button" class="btn btn-white" ng-click="cancel()">Close</button>
+                       <button type="button" class="btn btn-primary" ng-click="ok()"  id="passwordchange">Save changes</button>
+                   </div>
+                 </div>
+                </div>
+              </div>    
+  
+
+
+
+
+
+            <div class="content text-center" id="content" style="text-align: center;">
+
+
+            </div>
+
+            <div id="extracontent">
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+       
+
+    <script src="./admin.js"></script>
+
+
+</body>
+
+</html>

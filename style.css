@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.containers{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    border-radius: 10px;
+    
+}
+.carditem{
+    padding: 0.6rem;
+    margin: 1rem;
+    border-radius: 10px;
+    
+    
+}
+.loginbutton{
+    margin: 1rem;
+    background-color: #059862;
+}
+.card{
+    border-radius: 20px;
+    height: 350px;
+}
+
+
+.container{
+    background-color: lightblue;
+}
